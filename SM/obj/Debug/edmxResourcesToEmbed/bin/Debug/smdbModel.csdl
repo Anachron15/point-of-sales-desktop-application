@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="smdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Guid" Nullable="false" />
+    <Property Name="OrderCashierId" Type="Guid" Nullable="false" />
+    <Property Name="OrderTransaction" Type="Guid" Nullable="false" />
+    <Property Name="OrderQuantity" Type="Double" Nullable="false" />
+    <Property Name="OrderDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OrderOwner_UserId" Type="Guid" />
+    <Property Name="Transaction_TransactionId" Type="Guid" />
+    <NavigationProperty Name="Transaction" Relationship="Self.FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId" FromRole="Orders" ToRole="Transactions" />
+    <NavigationProperty Name="User" Relationship="Self.FK_dbo_Orders_dbo_Users_OrderOwner_UserId" FromRole="Orders" ToRole="Users" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_Orders_Order_OrderId" FromRole="Orders" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="ProductAttribute">
+    <Key>
+      <PropertyRef Name="ProductAttributeId" />
+    </Key>
+    <Property Name="ProductAttributeId" Type="Guid" Nullable="false" />
+    <Property Name="ProductAttributeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductAttributeValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Product_ProductId" Type="Guid" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_dbo_ProductAttributes_dbo_Products_Product_ProductId" FromRole="ProductAttributes" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ProductCategoryId" />
+    </Key>
+    <Property Name="ProductCategoryId" Type="Guid" Nullable="false" />
+    <Property Name="ProductCategoryValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId" FromRole="ProductCategories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Guid" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductBarcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductBarcodeImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductSku" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductVat" Type="Double" Nullable="false" />
+    <Property Name="ProductUnitCost" Type="Double" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Double" Nullable="false" />
+    <Property Name="ProductReplenishLimit" Type="Double" Nullable="false" />
+    <Property Name="ProductReorderLimit" Type="Double" Nullable="false" />
+    <Property Name="ProductDateAdded" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProductDateRemoved" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProductCategories_ProductCategoryId" Type="Guid" />
+    <Property Name="ProductStatuses_ProductStatusId" Type="Guid" />
+    <Property Name="ProductStore_StoreId" Type="Guid" />
+    <Property Name="ProductSubCategories_ProductSubCategoryId" Type="Guid" />
+    <Property Name="ProductSupplier_SupplierId" Type="Guid" />
+    <Property Name="ProductWarehouse_WarehouseId" Type="Guid" />
+    <Property Name="Order_OrderId" Type="Guid" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_dbo_Products_dbo_Orders_Order_OrderId" FromRole="Products" ToRole="Orders" />
+    <NavigationProperty Name="ProductAttributes" Relationship="Self.FK_dbo_ProductAttributes_dbo_Products_Product_ProductId" FromRole="Products" ToRole="ProductAttributes" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId" FromRole="Products" ToRole="ProductCategories" />
+    <NavigationProperty Name="ProductStatu" Relationship="Self.FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId" FromRole="Products" ToRole="ProductStatus" />
+    <NavigationProperty Name="ProductSubCategory" Relationship="Self.FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId" FromRole="Products" ToRole="ProductSubCategories" />
+    <NavigationProperty Name="Store" Relationship="Self.FK_dbo_Products_dbo_Stores_ProductStore_StoreId" FromRole="Products" ToRole="Stores" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId" FromRole="Products" ToRole="Suppliers" />
+    <NavigationProperty Name="Warehouse" Relationship="Self.FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId" FromRole="Products" ToRole="Warehouses" />
+  </EntityType>
+  <EntityType Name="ProductStatu">
+    <Key>
+      <PropertyRef Name="ProductStatusId" />
+    </Key>
+    <Property Name="ProductStatusId" Type="Guid" Nullable="false" />
+    <Property Name="ProductStatusValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId" FromRole="ProductStatus" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="ProductSubCategory">
+    <Key>
+      <PropertyRef Name="ProductSubCategoryId" />
+    </Key>
+    <Property Name="ProductSubCategoryId" Type="Guid" Nullable="false" />
+    <Property Name="ProductSubCategoryValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId" FromRole="ProductSubCategories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="Guid" Nullable="false" />
+    <Property Name="StoreName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StoreAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StoreOwner_UserId" Type="Guid" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_Stores_ProductStore_StoreId" FromRole="Stores" ToRole="Products" />
+    <NavigationProperty Name="User" Relationship="Self.FK_dbo_Stores_dbo_Users_StoreOwner_UserId" FromRole="Stores" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="SupplierId" />
+    </Key>
+    <Property Name="SupplierId" Type="Guid" Nullable="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SupplierContactNumber" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId" FromRole="Suppliers" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="Guid" Nullable="false" />
+    <Property Name="TransactionDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TransactionSubTotal" Type="Double" Nullable="false" />
+    <Property Name="TransactionAmountReceived" Type="Double" Nullable="false" />
+    <Property Name="TransactionAmountReturned" Type="Double" Nullable="false" />
+    <Property Name="TransactionStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionOwner_UserId" Type="Guid" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId" FromRole="Transactions" ToRole="Orders" />
+    <NavigationProperty Name="User" Relationship="Self.FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId" FromRole="Transactions" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="UserDetailsId" />
+    </Key>
+    <Property Name="UserDetailsId" Type="Guid" Nullable="false" />
+    <Property Name="UserFirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserLastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserContactNumber" Type="Double" Nullable="false" />
+    <Property Name="UserImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserRole" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId" FromRole="UserDetails" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserDetails_UserDetailsId" Type="Guid" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_dbo_Orders_dbo_Users_OrderOwner_UserId" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Stores" Relationship="Self.FK_dbo_Stores_dbo_Users_StoreOwner_UserId" FromRole="Users" ToRole="Stores" />
+    <NavigationProperty Name="Transactions" Relationship="Self.FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId" FromRole="Users" ToRole="Transactions" />
+    <NavigationProperty Name="UserDetail" Relationship="Self.FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId" FromRole="Users" ToRole="UserDetails" />
+  </EntityType>
+  <EntityType Name="Warehouse">
+    <Key>
+      <PropertyRef Name="WarehouseId" />
+    </Key>
+    <Property Name="WarehouseId" Type="Guid" Nullable="false" />
+    <Property Name="WarehouseName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WarehouseAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WarehouseContactNumber" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId" FromRole="Warehouses" ToRole="Products" />
+  </EntityType>
+  <Association Name="FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId">
+    <End Role="Transactions" Type="Self.Transaction" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transactions">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Transaction_TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_Users_OrderOwner_UserId">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="OrderOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Orders_Order_OrderId">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Order_OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ProductAttributes_dbo_Products_Product_ProductId">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductAttributes" Type="Self.ProductAttribute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductAttributes">
+        <PropertyRef Name="Product_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId">
+    <End Role="ProductCategories" Type="Self.ProductCategory" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ProductCategoryId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductCategories_ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId">
+    <End Role="ProductStatus" Type="Self.ProductStatu" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStatus">
+        <PropertyRef Name="ProductStatusId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductStatuses_ProductStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId">
+    <End Role="ProductSubCategories" Type="Self.ProductSubCategory" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSubCategories">
+        <PropertyRef Name="ProductSubCategoryId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductSubCategories_ProductSubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Stores_ProductStore_StoreId">
+    <End Role="Stores" Type="Self.Store" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductStore_StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId">
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplierId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductSupplier_SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId">
+    <End Role="Warehouses" Type="Self.Warehouse" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouses">
+        <PropertyRef Name="WarehouseId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductWarehouse_WarehouseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stores_dbo_Users_StoreOwner_UserId">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Stores" Type="Self.Store" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Stores">
+        <PropertyRef Name="StoreOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="TransactionOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId">
+    <End Role="UserDetails" Type="Self.UserDetail" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetails">
+        <PropertyRef Name="UserDetailsId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="UserDetails_UserDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="smdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="ProductAttributes" EntityType="Self.ProductAttribute" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductStatus" EntityType="Self.ProductStatu" />
+    <EntitySet Name="ProductSubCategories" EntityType="Self.ProductSubCategory" />
+    <EntitySet Name="Stores" EntityType="Self.Store" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <EntitySet Name="Transactions" EntityType="Self.Transaction" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Warehouses" EntityType="Self.Warehouse" />
+    <AssociationSet Name="FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId" Association="Self.FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId">
+      <End Role="Transactions" EntitySet="Transactions" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_Users_OrderOwner_UserId" Association="Self.FK_dbo_Orders_dbo_Users_OrderOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Orders_Order_OrderId" Association="Self.FK_dbo_Products_dbo_Orders_Order_OrderId">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ProductAttributes_dbo_Products_Product_ProductId" Association="Self.FK_dbo_ProductAttributes_dbo_Products_Product_ProductId">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductAttributes" EntitySet="ProductAttributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId" Association="Self.FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId" Association="Self.FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId">
+      <End Role="ProductStatus" EntitySet="ProductStatus" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId" Association="Self.FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId">
+      <End Role="ProductSubCategories" EntitySet="ProductSubCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Stores_ProductStore_StoreId" Association="Self.FK_dbo_Products_dbo_Stores_ProductStore_StoreId">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId" Association="Self.FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId" Association="Self.FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId">
+      <End Role="Warehouses" EntitySet="Warehouses" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stores_dbo_Users_StoreOwner_UserId" Association="Self.FK_dbo_Stores_dbo_Users_StoreOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Stores" EntitySet="Stores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId" Association="Self.FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId" Association="Self.FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId">
+      <End Role="UserDetails" EntitySet="UserDetails" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

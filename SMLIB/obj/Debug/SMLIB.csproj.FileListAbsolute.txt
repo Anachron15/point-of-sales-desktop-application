@@ -1,0 +1,46 @@
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\obj\Debug\SMLIB.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\obj\Debug\SMLIB.csproj.CopyComplete
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\obj\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\source\repos\SM\SMLIB\obj\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\obj\Debug\SMLIB.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\obj\Debug\SMLIB.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\obj\Debug\SMLIB.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\obj\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SMLIB\obj\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\obj\Debug\SMLIB.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\obj\Debug\SMLIB.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\obj\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\obj\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SMLIB\obj\Debug\SMLIB.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\obj\Debug\SMLIB.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\obj\Debug\SMLIB.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\obj\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\SM\SMLIB\obj\Debug\SMLIB.pdb

@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="smdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OrderCashierId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OrderTransaction" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="OrderQuantity" Type="float" Nullable="false" />
+    <Property Name="OrderDateTime" Type="datetime" Nullable="false" />
+    <Property Name="OrderOwner_UserId" Type="uniqueidentifier" />
+    <Property Name="Transaction_TransactionId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductAttributes">
+    <Key>
+      <PropertyRef Name="ProductAttributeId" />
+    </Key>
+    <Property Name="ProductAttributeId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductAttributeName" Type="nvarchar(max)" />
+    <Property Name="ProductAttributeValue" Type="nvarchar(max)" />
+    <Property Name="Product_ProductId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductCategories">
+    <Key>
+      <PropertyRef Name="ProductCategoryId" />
+    </Key>
+    <Property Name="ProductCategoryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductCategoryValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar(max)" />
+    <Property Name="ProductDescription" Type="nvarchar(max)" />
+    <Property Name="ProductBarcode" Type="nvarchar(max)" />
+    <Property Name="ProductBarcodeImage" Type="nvarchar(max)" />
+    <Property Name="ProductSku" Type="nvarchar(max)" />
+    <Property Name="ProductImage" Type="nvarchar(max)" />
+    <Property Name="ProductVat" Type="float" Nullable="false" />
+    <Property Name="ProductUnitCost" Type="float" Nullable="false" />
+    <Property Name="ProductQuantity" Type="float" Nullable="false" />
+    <Property Name="ProductReplenishLimit" Type="float" Nullable="false" />
+    <Property Name="ProductReorderLimit" Type="float" Nullable="false" />
+    <Property Name="ProductDateAdded" Type="datetime" Nullable="false" />
+    <Property Name="ProductDateRemoved" Type="datetime" Nullable="false" />
+    <Property Name="ProductCategories_ProductCategoryId" Type="uniqueidentifier" />
+    <Property Name="ProductStatuses_ProductStatusId" Type="uniqueidentifier" />
+    <Property Name="ProductStore_StoreId" Type="uniqueidentifier" />
+    <Property Name="ProductSubCategories_ProductSubCategoryId" Type="uniqueidentifier" />
+    <Property Name="ProductSupplier_SupplierId" Type="uniqueidentifier" />
+    <Property Name="ProductWarehouse_WarehouseId" Type="uniqueidentifier" />
+    <Property Name="Order_OrderId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="ProductStatus">
+    <Key>
+      <PropertyRef Name="ProductStatusId" />
+    </Key>
+    <Property Name="ProductStatusId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductStatusValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ProductSubCategories">
+    <Key>
+      <PropertyRef Name="ProductSubCategoryId" />
+    </Key>
+    <Property Name="ProductSubCategoryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductSubCategoryValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="StoreId" />
+    </Key>
+    <Property Name="StoreId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StoreName" Type="nvarchar(max)" />
+    <Property Name="StoreAddress" Type="nvarchar(max)" />
+    <Property Name="StoreOwner_UserId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplierId" />
+    </Key>
+    <Property Name="SupplierId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SupplierName" Type="nvarchar(max)" />
+    <Property Name="SupplierAddress" Type="nvarchar(max)" />
+    <Property Name="SupplierContactNumber" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TransactionDateTime" Type="datetime" Nullable="false" />
+    <Property Name="TransactionSubTotal" Type="float" Nullable="false" />
+    <Property Name="TransactionAmountReceived" Type="float" Nullable="false" />
+    <Property Name="TransactionAmountReturned" Type="float" Nullable="false" />
+    <Property Name="TransactionStatus" Type="nvarchar(max)" />
+    <Property Name="TransactionRemarks" Type="nvarchar(max)" />
+    <Property Name="TransactionOwner_UserId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="UserDetails">
+    <Key>
+      <PropertyRef Name="UserDetailsId" />
+    </Key>
+    <Property Name="UserDetailsId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserFirstName" Type="nvarchar(max)" />
+    <Property Name="UserLastName" Type="nvarchar(max)" />
+    <Property Name="UserAddress" Type="nvarchar(max)" />
+    <Property Name="UserContactNumber" Type="float" Nullable="false" />
+    <Property Name="UserImage" Type="nvarchar(max)" />
+    <Property Name="UserRole" Type="nvarchar(max)" />
+    <Property Name="UserStatus" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar(max)" />
+    <Property Name="UserEmail" Type="nvarchar(max)" />
+    <Property Name="UserDetails_UserDetailsId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Warehouses">
+    <Key>
+      <PropertyRef Name="WarehouseId" />
+    </Key>
+    <Property Name="WarehouseId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="WarehouseName" Type="nvarchar(max)" />
+    <Property Name="WarehouseAddress" Type="nvarchar(max)" />
+    <Property Name="WarehouseContactNumber" Type="float" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId">
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transactions">
+        <PropertyRef Name="TransactionId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Transaction_TransactionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_Users_OrderOwner_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="OrderOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ProductAttributes_dbo_Products_Product_ProductId">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="ProductAttributes" Type="Self.ProductAttributes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductAttributes">
+        <PropertyRef Name="Product_ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Orders_Order_OrderId">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Order_OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId">
+    <End Role="ProductCategories" Type="Self.ProductCategories" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ProductCategoryId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductCategories_ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId">
+    <End Role="ProductStatus" Type="Self.ProductStatus" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductStatus">
+        <PropertyRef Name="ProductStatusId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductStatuses_ProductStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId">
+    <End Role="ProductSubCategories" Type="Self.ProductSubCategories" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSubCategories">
+        <PropertyRef Name="ProductSubCategoryId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductSubCategories_ProductSubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Stores_ProductStore_StoreId">
+    <End Role="Stores" Type="Self.Stores" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="StoreId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductStore_StoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplierId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductSupplier_SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId">
+    <End Role="Warehouses" Type="Self.Warehouses" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouses">
+        <PropertyRef Name="WarehouseId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductWarehouse_WarehouseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Stores_dbo_Users_StoreOwner_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Stores" Type="Self.Stores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Stores">
+        <PropertyRef Name="StoreOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="TransactionOwner_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId">
+    <End Role="UserDetails" Type="Self.UserDetails" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetails">
+        <PropertyRef Name="UserDetailsId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="UserDetails_UserDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="smdbModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductAttributes" EntityType="Self.ProductAttributes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductStatus" EntityType="Self.ProductStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSubCategories" EntityType="Self.ProductSubCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Warehouses" EntityType="Self.Warehouses" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId" Association="Self.FK_dbo_Orders_dbo_Transactions_Transaction_TransactionId">
+      <End Role="Transactions" EntitySet="Transactions" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_Users_OrderOwner_UserId" Association="Self.FK_dbo_Orders_dbo_Users_OrderOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ProductAttributes_dbo_Products_Product_ProductId" Association="Self.FK_dbo_ProductAttributes_dbo_Products_Product_ProductId">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="ProductAttributes" EntitySet="ProductAttributes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Orders_Order_OrderId" Association="Self.FK_dbo_Products_dbo_Orders_Order_OrderId">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId" Association="Self.FK_dbo_Products_dbo_ProductCategories_ProductCategories_ProductCategoryId">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId" Association="Self.FK_dbo_Products_dbo_ProductStatus_ProductStatuses_ProductStatusId">
+      <End Role="ProductStatus" EntitySet="ProductStatus" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId" Association="Self.FK_dbo_Products_dbo_ProductSubCategories_ProductSubCategories_ProductSubCategoryId">
+      <End Role="ProductSubCategories" EntitySet="ProductSubCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Stores_ProductStore_StoreId" Association="Self.FK_dbo_Products_dbo_Stores_ProductStore_StoreId">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId" Association="Self.FK_dbo_Products_dbo_Suppliers_ProductSupplier_SupplierId">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId" Association="Self.FK_dbo_Products_dbo_Warehouses_ProductWarehouse_WarehouseId">
+      <End Role="Warehouses" EntitySet="Warehouses" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Stores_dbo_Users_StoreOwner_UserId" Association="Self.FK_dbo_Stores_dbo_Users_StoreOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Stores" EntitySet="Stores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId" Association="Self.FK_dbo_Transactions_dbo_Users_TransactionOwner_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId" Association="Self.FK_dbo_Users_dbo_UserDetails_UserDetails_UserDetailsId">
+      <End Role="UserDetails" EntitySet="UserDetails" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

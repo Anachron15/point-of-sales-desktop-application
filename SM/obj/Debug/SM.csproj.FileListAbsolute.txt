@@ -1,0 +1,135 @@
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SM.exe.config
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SM.exe
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SM.pdb
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\source\repos\SM\SM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.Cashier.resources
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.SettlePayment.resources
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.UpdateQuantity.resources
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.Properties.Resources.resources
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.csproj.GenerateResource.cache
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.csproj.CopyComplete
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.exe
+C:\Users\POWERLOGIC\source\repos\SM\SM\obj\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SM.exe.config
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.AddCategory.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.AddProduct.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Admin.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Cashier.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Login.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Quality.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Sales_Report.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.SettlePayment.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Status.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Store.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.SubCategory.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Supplier.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Transaction.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.UnitOfMeasurement.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.UpdateQuantity.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Properties.Resources.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.UpdateTransactionQuantity.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.Warehouse.resources
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.csproj.GenerateResource.cache
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\Flash Drive\SM\SM\obj\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SM.exe.config
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.AddCategory.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.AddProduct.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Admin.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Cashier.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Login.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Quality.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Sales_Report.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.SettlePayment.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Status.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Store.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.SubCategory.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Supplier.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Transaction.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.UnitOfMeasurement.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.UpdateQuantity.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Properties.Resources.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.UpdateTransactionQuantity.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.Warehouse.resources
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.csproj.GenerateResource.cache
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\Digoy\SM\SM\obj\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SM.exe.config
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SM.pdb
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\EntityFramework.dll
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SMLIB.dll
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SMLIB.pdb
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\SMLIB.dll.config
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\EntityFramework.xml
+C:\Users\POWERLOGIC\Desktop\SM\SM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.csprojAssemblyReference.cache
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.AddCategory.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.AddProduct.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Admin.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Cashier.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Login.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Quality.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Sales_Report.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.SearchByInitialLetter.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.SettlePayment.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Status.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Store.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.SubCategory.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Supplier.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Transaction.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.UnitOfMeasurement.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.UpdateQuantity.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Properties.Resources.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.UpdateTransactionQuantity.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.Warehouse.resources
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.csproj.GenerateResource.cache
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.csproj.CoreCompileInputs.cache
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.exe.manifest
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.application
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.csproj.CopyComplete
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.exe
+C:\Users\POWERLOGIC\Desktop\SM\SM\obj\Debug\SM.pdb

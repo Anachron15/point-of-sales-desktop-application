@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="smdbModelStoreContainer" CdmEntityContainer="smdbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="smdbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="smdbModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderCashierId" ColumnName="OrderCashierId" />
+          <ScalarProperty Name="OrderTransaction" ColumnName="OrderTransaction" />
+          <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
+          <ScalarProperty Name="OrderDateTime" ColumnName="OrderDateTime" />
+          <ScalarProperty Name="OrderOwner_UserId" ColumnName="OrderOwner_UserId" />
+          <ScalarProperty Name="Transaction_TransactionId" ColumnName="Transaction_TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductAttributes">
+      <EntityTypeMapping TypeName="smdbModel.ProductAttribute">
+        <MappingFragment StoreEntitySet="ProductAttributes">
+          <ScalarProperty Name="ProductAttributeId" ColumnName="ProductAttributeId" />
+          <ScalarProperty Name="ProductAttributeName" ColumnName="ProductAttributeName" />
+          <ScalarProperty Name="ProductAttributeValue" ColumnName="ProductAttributeValue" />
+          <ScalarProperty Name="Product_ProductId" ColumnName="Product_ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="smdbModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategories">
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="ProductCategoryValue" ColumnName="ProductCategoryValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="smdbModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="ProductBarcode" ColumnName="ProductBarcode" />
+          <ScalarProperty Name="ProductBarcodeImage" ColumnName="ProductBarcodeImage" />
+          <ScalarProperty Name="ProductSku" ColumnName="ProductSku" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="ProductVat" ColumnName="ProductVat" />
+          <ScalarProperty Name="ProductUnitCost" ColumnName="ProductUnitCost" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductReplenishLimit" ColumnName="ProductReplenishLimit" />
+          <ScalarProperty Name="ProductReorderLimit" ColumnName="ProductReorderLimit" />
+          <ScalarProperty Name="ProductDateAdded" ColumnName="ProductDateAdded" />
+          <ScalarProperty Name="ProductDateRemoved" ColumnName="ProductDateRemoved" />
+          <ScalarProperty Name="ProductCategories_ProductCategoryId" ColumnName="ProductCategories_ProductCategoryId" />
+          <ScalarProperty Name="ProductStatuses_ProductStatusId" ColumnName="ProductStatuses_ProductStatusId" />
+          <ScalarProperty Name="ProductStore_StoreId" ColumnName="ProductStore_StoreId" />
+          <ScalarProperty Name="ProductSubCategories_ProductSubCategoryId" ColumnName="ProductSubCategories_ProductSubCategoryId" />
+          <ScalarProperty Name="ProductSupplier_SupplierId" ColumnName="ProductSupplier_SupplierId" />
+          <ScalarProperty Name="ProductWarehouse_WarehouseId" ColumnName="ProductWarehouse_WarehouseId" />
+          <ScalarProperty Name="Order_OrderId" ColumnName="Order_OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStatus">
+      <EntityTypeMapping TypeName="smdbModel.ProductStatu">
+        <MappingFragment StoreEntitySet="ProductStatus">
+          <ScalarProperty Name="ProductStatusId" ColumnName="ProductStatusId" />
+          <ScalarProperty Name="ProductStatusValue" ColumnName="ProductStatusValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSubCategories">
+      <EntityTypeMapping TypeName="smdbModel.ProductSubCategory">
+        <MappingFragment StoreEntitySet="ProductSubCategories">
+          <ScalarProperty Name="ProductSubCategoryId" ColumnName="ProductSubCategoryId" />
+          <ScalarProperty Name="ProductSubCategoryValue" ColumnName="ProductSubCategoryValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="smdbModel.Store">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="StoreOwner_UserId" ColumnName="StoreOwner_UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="smdbModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierAddress" ColumnName="SupplierAddress" />
+          <ScalarProperty Name="SupplierContactNumber" ColumnName="SupplierContactNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="smdbModel.Transaction">
+        <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="TransactionDateTime" ColumnName="TransactionDateTime" />
+          <ScalarProperty Name="TransactionSubTotal" ColumnName="TransactionSubTotal" />
+          <ScalarProperty Name="TransactionAmountReceived" ColumnName="TransactionAmountReceived" />
+          <ScalarProperty Name="TransactionAmountReturned" ColumnName="TransactionAmountReturned" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="TransactionRemarks" ColumnName="TransactionRemarks" />
+          <ScalarProperty Name="TransactionOwner_UserId" ColumnName="TransactionOwner_UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="smdbModel.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetails">
+          <ScalarProperty Name="UserDetailsId" ColumnName="UserDetailsId" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+          <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+          <ScalarProperty Name="UserContactNumber" ColumnName="UserContactNumber" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="smdbModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserDetails_UserDetailsId" ColumnName="UserDetails_UserDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warehouses">
+      <EntityTypeMapping TypeName="smdbModel.Warehouse">
+        <MappingFragment StoreEntitySet="Warehouses">
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+          <ScalarProperty Name="WarehouseAddress" ColumnName="WarehouseAddress" />
+          <ScalarProperty Name="WarehouseContactNumber" ColumnName="WarehouseContactNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
